@@ -35,6 +35,11 @@ class Field:  # superclass for all base fields
 
 class Name(Field):
     """Class of username."""
+
+    # def __init__(self):
+    #     Field.__init__(self)
+    #     #  self.__bloke = None
+
     @Field.value.setter
     def value(self, new_value: str):
 
@@ -48,6 +53,8 @@ class Name(Field):
     def bloke(self, new_bloke: str):
 
         if new_bloke[0].isalpha():  # not in 'ьъыЫЬЪ\'"[]_0123456789!@$%^&*()-+?<>~`|\\/'
+            # self.__bloke = new_bloke
+            # self.bloke = new_bloke
             self._Field__bloke = new_bloke
 
         else:
