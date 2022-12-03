@@ -23,3 +23,5 @@ print(c.xx)  #I am A0 class! not B class, If second variant - must be: 'I am B c
 
 print(C.mro()) 
 print(C.__mro__) 
+print(b:=B)
+print(b.xx)
